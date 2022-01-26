@@ -1,4 +1,4 @@
-#React Django Blog
+# React Django Blog
 
 Simple blogging platform build with React on the frontend and Django Rest Framework on the backend.
 

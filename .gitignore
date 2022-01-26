@@ -1,0 +1,5 @@
+blogapi/.env
+blogapi/__pycache__/
+blogapi/db.sqlite3
+blogapi/.DS_Store
+blog-front-end/.DS_Store

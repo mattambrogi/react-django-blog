@@ -1,21 +1,43 @@
 # React Django Blog
+A blogging platform built with a React frontend and Django Rest Framework backend. I used this project as a deep dive into React and building applications with API based backends.
 
-Simple blogging platform build with React on the frontend and Django Rest Framework on the backend.
+## What it is
+This is a simple feed based blogging platform. Users can create an account and write blog posts which will then be shown on the main feed. Users have profile pages where their posts are displayed and can be managed if they are logged in.
 
-Users can:
-* Sign up, login
-* View a feed of all posts
-* Add, update, and delete their own posts
-* Navigate to invidiual pages for each post
-* Navigate to profiles for each user
+## Why I built it
+I had built a number of monolithic Django apps and a few very simple apps with React / DRF. I wanted to build something slightly more complex that would teach me about token based authentication and managing state and permissions in React. 
+
+## Features
+Users can
+- Create an account
+- View a feed of blog posts from all users
+- Add, edit, and delete posts from the feed for which they are the author
+- Navigate to profiles for each user
+  - Edit and delete posts directly from their own profile
+- Navigate to invidiual pages for each post
+  - Edit and delete posts from detail page if they are the author
 
 
-I used this project to teach myself the basics of React. Some features of React that I explored during this project include:
+## Technologies
+- Django Rest Framework
+  - dj-rest-auth
+- React
+ - Hooks
+ - Router
+ - Context
+
+
+## Learnings and reflections
+
+This project allowed me to gets hands on experience with many core parts of React. I now feel comfortable diving into React code. Building this exposed me to:
 * Passing props between components
-* Using data from a REST API
-* React hooks: useEffect, useState
+* Managing state
+* Using hooks: useEffect, useState
 * Context API
-* Cookies
+* Using Cookies for state information
 * React Router
-* Conditional views and permissions 
-* Conditional routing
+* Using data from a REST API
+* Token based authentication
+* Conditional views and permissions (i.e. only see edit button if author)
+* Conditionally routing depending on previous page (i.e. back button takes user feed or profile depending on they accessed blog post)
+
